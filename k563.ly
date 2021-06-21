@@ -22,7 +22,7 @@ violin = \relative c' {
     <c es>2.~ <c es>4. <c es>8-.( <c es>-. <c es>-.)
     <des es>2.~ <des es>4. <des es>8-.( <des es>-. <des es>-.)
     <c es>4( aes' g) bes( aes) r8. aes16
-    des4( c) r8. aes16 f'8.( g32 aes) es4 r8. e16
+    des4( c) r8. aes16 f'8.( g32 aes) es4 r8. es16
     
     c'4~ c16( bes aes g bes aes g f) f( es) es4 es es8~
     es16( f des bes) aes4( g8) r16 es'16-. des4( c8) r8 r4
@@ -139,12 +139,19 @@ upper = \relative c {
     \global
     <es aes c es>8\arpeggio <aes c es>4 <aes c es> <aes c es>8~
     <aes c es> <aes c es>4 <aes c es>8-.( <aes c es>-. <aes c es>-.)
+    <g bes des es>8\arpeggio <bes des es>4 <bes des es> <bes des es>8~
+    <bes des es>8 <bes des es>4 <bes des es>8-.( <bes des es>-. <bes des es>-.)
+    <<{es4 aes( g) bes( aes)}\\{c, c bes des c}>> r8. aes'16
+    <<{des4( c)}\\{f, es}>> r8. aes16 f'8.( g32 aes) es4
 }
 
 lower = \relative c, {
     \global
     \clef bass
     aes4( c es aes c8) r8 r4
+    es,4( g bes es g8) r r4
+    aes,8 aes' aes aes aes aes \repeat unfold 12 { aes }
+    <aes des>4-. <aes c>-. r
 }
 
 \score {
