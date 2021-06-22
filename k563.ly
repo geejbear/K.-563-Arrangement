@@ -1,7 +1,7 @@
 \version "2.20.0"
 
 \paper {
-    indent = 1.0 \in
+    indent = 0.75 \in
 }
 
 \header {
@@ -142,7 +142,33 @@ upper = \relative c {
     <g bes des es>8\arpeggio <bes des es>4 <bes des es> <bes des es>8~
     <bes des es>8 <bes des es>4 <bes des es>8-.( <bes des es>-. <bes des es>-.)
     <<{es4 aes( g) bes( aes)}\\{c, c bes des c}>> r8. aes'16
-    <<{des4( c)}\\{f, es}>> r8. aes16 f'8.( g32 aes) es4
+    <<{des4( c)}\\{f, es}>> r8. aes16 f'8.( g32 aes) es4 r8. es16
+    
+    % 9
+    c'4~ c16( bes aes g bes aes g f)
+    f( es) <g, es'>4 <g es'> %TODO: improve this
+    <<{es'8~ es16 f des bes aes4( g8)}\\{g8 aes f es4~ es8}>> r16 es'16-.
+    <g, bes des>4( <aes c>8) r r4
+    r r r8. aes16
+    ges'4~ ges16([ f es des] c bes aes ges)
+    f([ g! aes a] bes[ b c des] d es e f)
+    f( es) <g, es'>4 <g es'> es''8~ % TODO: improve
+    \times 2/3 { es16[ c aes] } \times 2/3 { es c aes }
+        es8 r <es c'>8( <des bes'>16.) <c aes'>32-.
+        
+    % 18
+    <c aes'>4 r r32 g''32([ aes c] bes aes g f)
+    f16( es) es4 es es8 es8.( aes16) es4
+    r32 g32([ aes c] bes aes g f)
+    f16( e) e4( g8 bes e,) g4( f)
+    r32 g32([ aes c] bes aes g f)
+    es!8.( d16) aes'4.( g32 f es d)
+    \times 2/3 { es16-.[ fis,-. g-.] }
+    \times 2/3 { aes-. a-. bes-. }
+    \times 2/3 { b-.[ c-. cis-.] }
+    \times 2/3 { d-. es-. e-. }
+    \times 2/3 { f!-.[ fis-. g-.] }
+    \times 2/3 { aes!-. a-. bes!-. } aes8~ aes32( g f g) f4 r
 }
 
 lower = \relative c, {
@@ -152,6 +178,27 @@ lower = \relative c, {
     es,4( g bes es g8) r r4
     aes,8 aes' aes aes aes aes \repeat unfold 12 { aes }
     <aes des>4-. <aes c>-. r
+    
+    % 9
+    r r r8. aes16
+    des4~ des16( c bes aes g f es des)
+    <<{r8 bes' c4( bes8)}\\{c,8 des es4~ es8}>> r8
+    e'4( f8) r r8. c,16
+    aes'4~ aes16( g f e g f es des)
+    c8 <c aes'> <c aes'> <c aes'> <c aes'> <c a'>
+    <des bes'>2 des4~
+    des16([ es e f] fis[ g aes a] bes[ b c des])
+    c8 r r4 es,4
+    
+    % 18
+    \repeat unfold 3 { aes16( c es c) }
+    \repeat unfold 3 { g( des' es des) }
+    \repeat unfold 3 { aes( c es c) }
+    g( bes c bes) e,( bes' c bes) c,( g' bes g)
+    f( c' g c) aes( c f, aes c, f aes, c)
+    bes( aes' f aes) bes,( f' d f) bes,( aes' f aes)
+    \repeat unfold 3 { bes,( g' es g) }
+    <<{f8~ f32( es d es) d4}\\{bes2}>> r4
 }
 
 \score {
@@ -173,7 +220,7 @@ lower = \relative c, {
         >>
         \new PianoStaff \with {
             instrumentName = \markup {
-                \column { "Fortepiano" \line { "arrangement" } }
+                \column { "Piano" \line { "Version" } }
             }
         } 
         <<
