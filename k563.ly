@@ -60,18 +60,19 @@ violin = \relative c' {
     g16( es') f,( c') es,8.( f64 es d es g8 f)
     es4( c' d,) es32( f g aes b c d es) f16-.( g-. aes-. bes-. c8) r16 d,
     f4( es8) r r4 
+    }
     <ges, bes>2.~ <ges bes>4. <ges bes>8-.(<ges bes>-. <ges bes>-.)
     <as bes>2.~ <as bes>4. <as bes>8-.(<as bes>-. <as bes>-.)
     <as b>2.~ <as b>4. <as b>8-.(<as b>-. <as b>-.)
-    <as b>4( \autoBeamOff<g c>8) \autoBeamOn 
-    e(g bes des4 \autoBeamOff c8) \autoBeamOn 
-    as'( f des b4 \autoBeamOff c8) \autoBeamOn r8 r4
+    <as b>4( <g c>8)
+    e[ (g bes] des4 c8)
+    as'[ ( f des] b4 c8) r8 r4
     <des bes'>4( <c as'>8) r8 r4 <f, b>4( <e c'>8) r r4 r r8 
-    es8( ges a des4 \autoBeamOff c8) \autoBeamOn 
-    es,( ges a c4\autoBeamOff bes8) \autoBeamOn
-    des,( fes g? ces4 \autoBeamOff bes8) \autoBeamOn 
-    g'( bes des fes4 es8) r8 r4 
-    }
+    es8( ges a des4 c8) 
+    es,[ ( ges a] c4 bes8)
+    des,[ ( fes g?] ces4 bes8) 
+    g'[ ( bes des] fes4 es8) r8 r4 
+    
 }
 
 viola = \relative c' {
@@ -112,11 +113,11 @@ viola = \relative c' {
     r es,( g c) r c( f aes) r aes,( d f) <aes, d>4( <g es'>8) r r4
     es'2.~es4. es8-.( es-. es-.) f2.~f4. f8-.( f-. f-.) f2.~f4. f8-.( f-. f-.)
     f4( e8) r8 r4 <g, e'>4( <as f'>8) r8 r4 
-	<as f'>4( \autoBeamOff <g e'>8) \autoBeamOn
-	des'( bes g e4 f8) as( c f a4 g8) r8 r4 	
+	<as f'>4( <g e'>8)
+	des'[ ( bes g] e4 f8) as[ ( c f] a4 g8) r8 r4 	
 	R2.
 	r8 <a, ges'>-.(<a ges'>-.) r8 r4 r8 <bes f'>8-.( <bes f'>-.) r8 r4 r8 
-	<g! fes'>-.( <g fes'>-.) r8 r4 r8 ces'( bes) g,( bes des fes4 es8)  r8 r4
+	<g! fes'>-.( <g fes'>-.) r8 r4 r8 ces'( bes) g,[ ( bes des] fes4 es8)  r8 r4
 
 
 }
