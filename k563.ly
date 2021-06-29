@@ -55,7 +55,8 @@ violin = \relative c' {
     es8.( es'16) es2~ es8.( es'16) es2~
     es8 g!~ g32([ f es d] f es d c) bes([ b d c] bes aes c bes)
     aes([ g bes aes] g f aes f)
-    \afterGrace f2\startTrillSpan { es32([ f])\stopTrillSpan }
+        #(define afterGraceFraction (cons 15 16))
+        \afterGrace f2\startTrillSpan { es32([ f])\stopTrillSpan }
     
     es4 r8 es( c g) g8.( aes32 g f8) c'( f aes)
     es8.( f32 es d8) c-.( bes-. aes-.)
@@ -244,6 +245,44 @@ upper = \relative c {
     \times 2/3 { d-. es-. e-. }
     \times 2/3 { f!-.[ fis-. g-.] }
     \times 2/3 { aes!-. a-. bes!-. } aes8~ aes32( g f g) f4 r
+    
+    % 26
+    es,4( g bes)
+    es8.( f64 es d es g8) r r4
+    bes,,8.( c64 bes a bes d16 bes f' d bes' f d' bes)
+    f'8.( g64 f e f aes8) r r4
+    
+    % 30
+    ges2.
+    ces,,
+    fes''
+    <<
+        { fes,,2. } \\
+        { r8 <bes, des>-.( \repeat unfold 3 { <bes des>-. } <bes des>-.) }
+    >>
+    <<
+        { es8 es4 es es8~
+          es es'4 es es8~
+          es8 } \\
+        { <bes, des>8 <bes des>( <as c>) <as c>~ <as ces> <as ces>(
+          <g! bes>) <g'! bes>( <ges a>) <ges a>4 <ges a>8
+          <g! bes>8 }
+    >>
+    
+    % 36
+    \appoggiatura{es'16} es'8~ es32([ d es d] f es d c bes[ b d c] bes as c bes)
+    as([ g bes as] g f as f)
+        #(define afterGraceFraction (cons 15 16))
+        \afterGrace f2\startTrillSpan { es32([ f])\stopTrillSpan }
+    es4 r8 es( c g)
+    
+    % 39
+    <<{ g8.( as32 g f8) }\\{ c4~ c8 }>> c'8( f as)
+    <<{es8.( f32 es d8) c-.( bes-. as-.) }\\{ aes4. g8 f f }>>
+    g16( es') f,( c') <<{ es,8.( f64 es d es g8 f) }\\{ s4 d }>>
+    es4( c' d,)
+    es32( f g as bes c d es) f16-.( g-. as-. bes-.) c8 r16 d,
+    <<{ f4( es8) }\\{ d4( es8) }>> r8 r4
 }
 
 lower = \relative c, {
@@ -274,6 +313,32 @@ lower = \relative c, {
     bes( aes' f aes) bes,( f' d f) bes,( aes' f aes)
     \repeat unfold 3 { bes,( g' es g) }
     <<{f8~ f32( es d es) d4}\\{bes2}>> r4
+    
+    % 26
+    <es g>8 <es g>4 <es g> <es g>8~
+    <es g>8 <es g>4 <es g>8-.( <es g>8-. <es g>8-.)
+    <d f>8 <d f>4 <d f>4 <d f>8~
+    <d f>8 <d f>4 <d f>8-.( <d f>-. <d f>-.)
+    \repeat unfold 2 {
+        r8 <es ges>-.( \repeat unfold 3 { <es ges>-. } <es ges>-.)
+    }
+    r8 <des fes aes ces>-.( \repeat unfold 3 { <des fes aes ces>-. }
+        <des fes aes ces>-.-.)
+    <ges,, ges'>2.(
+    <g! g'!>8) <g g'>-.( <as as'>-. <as as'>-. <as as'>-. <as as'>-.)
+    <bes bes'>-.( <bes bes'>-. <ces ces'>-. <ces ces'>-. <c c'>-. <c c'>-.)
+    
+    % 36
+    \repeat unfold 3 { bes'16( es g bes) }
+    bes,( es f bes) bes,( es f as) bes,( d f as)
+    <c, g'>4 r r
+    
+    % 39
+    as4~ as8 r r4
+    <bes f'>4. <bes es>8-.( <bes d>-. <b d>-.)
+    <c es>8 <as as'> <<{ g'4( as) }\\{ bes,2 }>>
+    \repeat unfold 2 { c16( es g c) as,( c f as) bes,( d f as) }
+    <<{ as4( g8) }\\{ es4~ es8 }>> r8 r4
 }
 
 \score {
