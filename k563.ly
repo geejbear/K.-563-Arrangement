@@ -1,4 +1,4 @@
-\version "2.20.0"
+\version "2.19.83"
 
 \paper {
     indent = 0.75 \in
@@ -61,18 +61,21 @@ violin = \relative c' {
     es4( c' d,) es32( f g aes b c d es) f16-.( g-. aes-. bes-. c8) r16 d,
     f4( es8) r r4 
     }
-    <ges, bes>2.~ <ges bes>4. <ges bes>8-.(<ges bes>-. <ges bes>-.)
-    <as bes>2.~ <as bes>4. <as bes>8-.(<as bes>-. <as bes>-.)
-    <as b>2.~ <as b>4. <as b>8-.(<as b>-. <as b>-.)
-    <as b>4( <g c>8)
-    e[ (g bes] des4 c8)
-    as'[ ( f des] b4 c8) r8 r4
-    <des bes'>4( <c as'>8) r8 r4 <f, b>4( <e c'>8) r r4 r r8 
-    es8( ges a des4 c8) 
-    es,[ ( ges a] c4 bes8)
-    des,[ ( fes g?] ces4 bes8) 
-    g'[ ( bes des] fes4 es8) r8 r4 
     
+    % 45
+    <ges, bes>2.~ <ges bes>4. <ges bes>8-.( <ges bes>-. <ges bes>-.)
+    <as bes>2.~ <as bes>4. <as bes>8-.( <as bes>-. <as bes>-.)
+    <as b>2.~ <as b>4. <as b>8-.( <as b>-. <as b>-.)
+    <as b>4( <g c>8) e[ (g bes]
+    des4 c8) as'[ ( f des]
+    b4 c8) r8 r4
+    <des bes'>4( <c as'>8) r8 r4
+    <f, b>4( <e c'>8) r r4
+    r r8 es8( ges a
+    des4 c8) es,[ ( ges a]
+    c4 bes8) des,[ ( fes g?]
+    ces4 bes8) g'[ ( bes des]
+    fes4 es8) r8 r4
 }
 
 viola = \relative c' {
@@ -262,5 +265,3 @@ lower = \relative c, {
     >>
     \layout { }
 }
-
-I
