@@ -18,7 +18,9 @@ global = {
 
 violin = \relative c' {
     \global
+    
     \repeat volta 2 {
+    
     <c es>2.~ <c es>4. <c es>8-.( <c es>-. <c es>-.)
     <des es>2.~ <des es>4. <des es>8-.( <des es>-. <des es>-.)
     <c es>4( aes' g) bes( aes) r8. aes16
@@ -59,11 +61,13 @@ violin = \relative c' {
     es8.( f32 es d8) c-.( bes-. aes-.)
     g16( es') f,( c') es,8.( f64 es d es g8 f)
     es4( c' d,) es32( f g aes b c d es) f16-.( g-. aes-. bes-. c8) r16 d,
-    f4( es8) r r4 
-    }
+    f4( es8) r r4
+    
+    } % \repeat volta 2
     
     % 45
-    <ges, bes>2.~ <ges bes>4. <ges bes>8-.( <ges bes>-. <ges bes>-.)
+    <ges, bes>2.~
+    <ges bes>4. <ges bes>8-.( <ges bes>-. <ges bes>-.)
     <as bes>2.~ <as bes>4. <as bes>8-.( <as bes>-. <as bes>-.)
     <as b>2.~ <as b>4. <as b>8-.( <as b>-. <as b>-.)
     <as b>4( <g c>8) e[ (g bes]
@@ -114,15 +118,24 @@ viola = \relative c' {
     <c es> c16( aes) g4( aes)
     r16 g( c es) r f,( c' es) r f,( aes bes)
     r es,( g c) r c( f aes) r aes,( d f) <aes, d>4( <g es'>8) r r4
-    es'2.~es4. es8-.( es-. es-.) f2.~f4. f8-.( f-. f-.) f2.~f4. f8-.( f-. f-.)
-    f4( e8) r8 r4 <g, e'>4( <as f'>8) r8 r4 
-	<as f'>4( <g e'>8)
-	des'[ ( bes g] e4 f8) as[ ( c f] a4 g8) r8 r4 	
+    
+    % 45
+    es'2.~
+    es4. es8-.( es-. es-.)
+    f2.~
+    f4. f8-.( f-. f-.)
+    f2.~
+    f4. f8-.( f-. f-.)
+    f4( e8) r8 r4
+    <g, e'>4( <as f'>8) r8 r4
+	<as f'>4( <g e'>8) des'[ ( bes g]
+    e4 f8) as[ ( c f]
+    a4 g8) r8 r4
 	R2.
-	r8 <a, ges'>-.(<a ges'>-.) r8 r4 r8 <bes f'>8-.( <bes f'>-.) r8 r4 r8 
-	<g! fes'>-.( <g fes'>-.) r8 r4 r8 ces'( bes) g,[ ( bes des] fes4 es8)  r8 r4
-
-
+	r8 <a, ges'>-.( <a ges'>-.) r8 r4
+    r8 <bes f'>8-.( <bes f'>-.) r8 r4
+    r8 <g! fes'>-.( <g fes'>-.) r8 r4
+    r8 ces'( bes) g,[( bes des] fes4 es8) r8 r4
 }
 
 cello = \relative c {
@@ -159,11 +172,9 @@ cello = \relative c {
 	es,4( ges bes es ges8) r8 r4
     d,4( f as d f8) r8 r4
     des,!4( f as des! f8) r8 r4
-    r8 c,8( c') c c c 
-    r8 c,8( c') c c c 
-    r8 c,8( c') c c c 
-    r8 c,8( c') c c c 
-    c,4. e'8( g bes des4 c8) r8 r4
+    \repeat unfold 4 { r8 c,8( c') c c c }
+    c,4. e'8( g bes
+    des4 c8) r8 r4
     r8 es8-.( es-.) r8 r4 
     r8 d8-.( des-.) r8 r4
     r8 d8-.( d-.) r8 r4 \clef tenor
