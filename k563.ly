@@ -68,16 +68,20 @@ violin = \relative c' {
     % 45
     <ges, bes>2.~
     <ges bes>4. <ges bes>8-.( <ges bes>-. <ges bes>-.)
-    <as bes>2.~ <as bes>4. <as bes>8-.( <as bes>-. <as bes>-.)
-    <as b>2.~ <as b>4. <as b>8-.( <as b>-. <as b>-.)
-    <as b>4( <g c>8) e[ (g bes]
-    des4 c8) as'[ ( f des]
+    <as bes>2.~
+    <as bes>4. <as bes>8-.( <as bes>-. <as bes>-.)
+    <as b>2.~
+    <as b>4. <as b>8-.( <as b>-. <as b>-.)
+    <as b>4( <g! c>8) e[ (g bes]
+    des!4 c8) as'[ ( f des]
     b4 c8) r8 r4
     <des bes'>4( <c as'>8) r8 r4
     <f, b>4( <e c'>8) r r4
-    r r8 es8( ges a
-    des4 c8) es,[ ( ges a]
-    c4 bes8) des,[ ( fes g?]
+    
+    % 56
+    r r8 es!8( ges a
+    des4 c8) es,[( ges a]
+    c4 bes8) des,[ ( fes g!]
     ces4 bes8) g'[ ( bes des]
     fes4 es8) r8 r4
 }
@@ -128,9 +132,11 @@ viola = \relative c' {
     f4. f8-.( f-. f-.)
     f4( e8) r8 r4
     <g, e'>4( <as f'>8) r8 r4
-	<as f'>4( <g e'>8) des'[ ( bes g]
+	<as f'>4( <g e'>8) des'![ ( bes g]
     e4 f8) as[ ( c f]
-    a4 g8) r8 r4
+    as4 g8) r8 r4
+    
+    % 56
 	R2.
 	r8 <a, ges'>-.( <a ges'>-.) r8 r4
     r8 <bes f'>8-.( <bes f'>-.) r8 r4
@@ -141,16 +147,25 @@ viola = \relative c' {
 cello = \relative c {
     \global
     \clef bass
-    aes4( c es aes c8) r8 r4
-    es,,( g bes es g8) r r4 \repeat unfold 18 { aes,8 }
+    aes4( c es
+    aes c8) r8 r4
+    es,,( g bes
+    es g8) r r4
+    \repeat unfold 18 { aes,8 }
     aes'4-. aes-. r
     
-    r r r8. aes16 des4~ des16( c bes aes g f es des) c8( des) es4( es,8) r
+    % 9
+    r r r8. aes16
+    des4~ des16( c bes aes g f es des)
+    c8( des) es4( es,8) r
     e''4( f8) r r8. c,16
-    aes'4~ aes16( g f e g f es des) c8 c c c c c
-    des2.~ des16( es e f fis g aes a bes b c des)
+    aes'4~ aes16( g f e g f es des)
+    \repeat unfold 6 { c8 }
+    des2.~
+    des16( es e f fis g aes a bes b c des)
     c8 r es, r es,4(
     
+    % 18
     aes8) aes-. c-. es-. aes-. aes,-.
     r es-. g-. bes-. g-. es-.
     r aes-. c-. es-. aes-. aes,-.
@@ -159,25 +174,39 @@ cello = \relative c {
     r bes,-. f'-. d-. bes-. bes'-.
     r bes,-. bes'-. g-. es-. g-. bes4 bes, r
     
-    es'2.~ es4. es8-.( es-. es-.)
-    d2.~ d4. d8-.( d-. d-.)
-    r es es es es es r es es es es es
+    % 26
+    es'2.~
+    es4. es8-.( es-. es-.)
+    d2.~
+    d4. d8-.( d-. d-.)
+    \repeat unfold 2 { r es es es es es }
     r des des des des des
-    ges,,2.( g!8) g aes aes aes aes bes bes ces ces c c
+    ges,,2.(
+    g!8) g aes aes aes aes
+    bes bes ces ces c c
     \repeat unfold 6 { bes r }
-    
     c4 r r
-    aes'2 r8 f f'4. es8-.( d-. f-.)
-    es[ aes,,] bes r bes r c r aes r bes r c r aes r bes r es4~ es8 r r4
-	es,4( ges bes es ges8) r8 r4
-    d,4( f as d f8) r8 r4
-    des,!4( f as des! f8) r8 r4
+    
+    % 39
+    aes'2 r8 f
+    f'4. es8-.( d-. f-.)
+    es[ aes,,] bes r bes r
+    \repeat unfold 2 { c r aes r bes r }
+    es4~ es8 r r4
+    
+    % 45
+	es,4( ges bes
+    es ges8) r8 r4
+    d,4( f as
+    d f8) r8 r4
+    des,!4( f as
+    des! f8) r8 r4
     \repeat unfold 4 { r8 c,8( c') c c c }
     c,4. e'8( g bes
     des4 c8) r8 r4
     r8 es8-.( es-.) r8 r4 
     r8 d8-.( des-.) r8 r4
-    r8 d8-.( d-.) r8 r4 \clef tenor
+    r8 des8-.( des-.) r8 r4 \clef tenor
     r8 as'8( g) r8 r4
 }
 
