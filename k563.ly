@@ -85,6 +85,22 @@ violin = \relative c' {
     c4 bes8) des,[ ( fes g!]
     ces4 bes8) g'[ ( bes des]
     fes4 es8) r8 r4
+
+    % 61
+    r8 as,,( g) r r4
+    r8 des''-.( des-.) r r4
+    <c,, es>2.~
+    <c es>4. <c es>8-.( <c es>-.<c es>8-.)
+    <des es>2.~
+    <des es>4. <des es>8-.( <des es>8-. <des es>8-.)
+    <c es>4( as' g) 
+    bes( as) r8. as16
+    des4( c) r8. as16
+    f'8.( g32 as) es4 r8. es16 
+    c'4~ c16( bes as g bes as g f)
+    f( es) es4 es es8~
+    es16( f des bes) as4( g8.) es'16-.
+    des4( c8) r8 r4
 }
 
 viola = \relative c' {
@@ -143,6 +159,17 @@ viola = \relative c' {
     r8 <bes f'>8-.( <bes f'>-.) r8 r4
     r8 <g! fes'>-.( <g fes'>-.) r8 r4
     r8 ces'( bes) g,[( bes des] fes4 es8) r8 r4
+
+    % 62
+    r8 <as bes>8-.( <g bes>) r8 r4
+    as,2.~
+    as4. as8-.( as-. as-.)
+    g2.~
+    g4. g8-.( g-. g-.)
+    as4( c bes)
+    des( c) r8. c16
+    f4( es) r8. c16 
+    des8.( es32 f) c4 r4
 }
 
 cello = \relative c {
