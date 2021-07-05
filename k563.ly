@@ -252,8 +252,21 @@ cello = \relative c {
     c8( des) es4( es,8) r8
     e''4( f8) r r r16 c,16
     as'4~as16( g f e g f es des)
+    c8 c c c c c 
+    des2~ des8( d)
+    es( ges c, es as, c)
+    des2( des8) r16 des'16
+    es4~ es16( des c bes a g f es)
+    des( d es e f ges g as a bes b c)
+    des8( bes!4 g des8)
+    c8 r8 es r es,4( 
+    as8) as-. c-. es-. as-. as,-.
+    r es-. g-. bes-. g-. es-.
+    r as-. c-. es-. as-. as,-.
+    r c,-. g'-. e-. c-. c'-.
 
-
+    % 88
+    
 }
 
 upper = \relative c {
