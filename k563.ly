@@ -236,6 +236,24 @@ cello = \relative c {
     r8 d8-.( des-.) r8 r4
     r8 des8-.( des-.) r8 r4 \clef tenor
     r8 as'8( g) r8 r4
+    r8 des-.( des-.) \clef bass des,( bes g
+    
+    % 62
+    fes4 es8) r8 r4
+    as( c es) 
+    as8.( bes64 as g as) c8 r8 r4
+    es,,8.( f64 es d es) g16[ bes8 es16] g( bes es g) \clef tenor 
+    bes8.( c64 bes a bes) f'8 r8 r4 \clef bass
+    as,,,8 as as as as as
+    \repeat unfold 2 { as as as16( g as g) as8 as }
+    as'4-. as-. r4 
+    r r r8. as16
+    des4~ des16( c bes as g f es des)
+    c8( des) es4( es,8) r8
+    e''4( f8) r r r16 c,16
+    as'4~as16( g f e g f es des)
+
+
 }
 
 upper = \relative c {
